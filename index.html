@@ -29,31 +29,28 @@
 
 
     <form id="searchForm" class="header-searchForm">
-      <input class="search-button" type="text" placeholder="Search a movie or a serie" />
+      <input type="text" placeholder="Search a movie" />
       <button id="searchBtn" title="search"><span></span></button>
     </form>
   </header>
 
   <section id="categoriesPreview" class="categoriesPreview-container">
-    <div class="categoriesPreview-container__div">
-    <h2 class="categoriesPreview-title">Categories</h2>
+    
+      <h2 class="categoriesPreview-title">Categories</h2>
 
-    <article class="categoriesPreview-list">
-      <div class="category-container__load">
-        <div class="category-container__text-load"></div>
-      </div>
-      <!-- <div class="category-container">
+      <article class="categoriesPreview-list">
+        <!-- <div class="category-container">
         <h3 id="id28" class="category-title">Romance</h3>
       </div> -->
-    </article>
-    </div>
+      </article>
+
   </section>
 
 
   <section id="trendingPreview" class="trendingPreview-container">
     <div class="trendingPreview-header">
-      <h2 class="trendingPreview-title">Tendencias</h2>
-      <button class="trendingPreview-btn">Ver más</button>
+      <h2 class="trendingPreview-title">Trending Movies</h2>
+      <button class="trendingPreview-btn"><span></span><p> See more</p></button>
     </div>
 
     <article class="trendingPreview-movieList">
@@ -61,27 +58,18 @@
         <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
           alt="Nombre de la película" />
       </div> -->
-
     </article>
   </section>
 
 
 
   <section id="genericList" class="genericList-container inactive">
-    <div class="movie-container">
+    <!-- <div class="movie-container">
       <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
         alt="Nombre de la película" />
-    </div>
+    </div> -->
 
-    <div class="movie-container">
-      <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
-        alt="Nombre de la película" />
-    </div>
-
-    <div class="movie-container">
-      <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
-        alt="Nombre de la película" />
-    </div>
+   
   </section>
 
   <section id="movieDetail" class="movieDetail-container inactive">
@@ -92,42 +80,28 @@
     </p>
 
     <article class="categories-list">
-      <div class="category-container">
+      <!-- <div class="category-container">
         <h3 id="id28" class="category-title">Romance</h3>
-      </div>
+      </div> -->
 
-      <div class="category-container">
-        <h3 id="id16" class="category-title">Drama</h3>
-      </div>
-
-      <div class="category-container">
-        <h3 id="id14" class="category-title">Acción</h3>
-      </div>
     </article>
 
     <article class="relatedMovies-container">
       <h2 class="relatedMovies-title">Películas similares</h2>
 
       <div class="relatedMovies-scrollContainer">
-        <div class="movie-container">
+        <!-- <div class="movie-container">
           <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
             alt="Nombre de la película" />
-        </div>
+        </div> -->
 
-        <div class="movie-container">
-          <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
-            alt="Nombre de la película" />
-        </div>
 
-        <div class="movie-container">
-          <img src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg" class="movie-img"
-            alt="Nombre de la película" />
         </div>
       </div>
     </article>
   </section>
 
-  <footer>Hecho con amor en Platzi por @juandc</footer>
+  <footer>Hecho con amor en Platzi</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./src/secrets.js"></script>
