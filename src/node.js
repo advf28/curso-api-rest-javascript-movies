@@ -20,6 +20,7 @@ const relatedMoviesContainer = document.querySelector(
 
 // Elements
 const headerTitle = document.querySelector(".header-title");
+const headerLogo = document.querySelector(".header-logo");
 const arrowBtn = document.querySelector(".header-arrow");
 const headerCategoryTitle = document.querySelector(
   ".header-title--categoryView"

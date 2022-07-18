@@ -44,9 +44,10 @@ function homePage(){
   headerSection.classList.remove('header-container--long')
   headerSection.style.background = '';
   arrowBtn.classList.add('inactive');
+  headerCategoryTitle.classList.add('inactive');
+  headerLogo.classList.remove("inactive");
   arrowBtn.classList.remove("header-arrow--white");
   headerTitle.classList.remove('inactive');
-  headerCategoryTitle.classList.add('inactive');
   searchForm.classList.remove('inactive')
 
   trendingPreviewSection.classList.remove('inactive');
@@ -54,6 +55,7 @@ function homePage(){
   genericSection.classList.add('inactive')
   movieDetailSection.classList.add('inactive')
 
+  
   getTrendingMoviesPreview();
   getCategoriesPreview();
 }
@@ -63,11 +65,12 @@ function categoriesPage(){
 
   headerSection.classList.remove('header-container--long')
   headerSection.style.background = '';
+  headerLogo.classList.add("inactive")
   arrowBtn.classList.remove('inactive');
   arrowBtn.classList.remove("header-arrow--white");
   headerTitle.classList.add('inactive');
   headerCategoryTitle.classList.remove('inactive');
-  searchForm.classList.add('inactive')
+  searchForm.classList.remove('inactive')
 
   trendingPreviewSection.classList.add('inactive');
   categoriesPreviewSection.classList.add('inactive')
@@ -76,8 +79,8 @@ function categoriesPage(){
   
   const [_, categoryData] = location.hash.split('=') //['#category', 'id-name'] definir variables como en ecmascript 6
   const [cataegoryId, categoryName] = categoryData.split('-')
-
   headerCategoryTitle.innerHTML = categoryName;
+
   
   getMoviesByCategory(cataegoryId)
 }
@@ -90,6 +93,8 @@ function movieDetailsPage() {
   arrowBtn.classList.remove("inactive");
   arrowBtn.classList.add("header-arrow--white");
   headerTitle.classList.add("inactive");
+  headerLogo.classList.add("inactive");
+
   headerCategoryTitle.classList.add("inactive");
   searchForm.classList.add("inactive");
 
@@ -98,8 +103,9 @@ function movieDetailsPage() {
   genericSection.classList.add("inactive");
   movieDetailSection.classList.remove("inactive");
 
-  const [_, movieId] = location.hash.split("="); //['#movie', 'id de la pelicula'] definir variables como en ecmascript 6
+  movieDetailTitle.classList.remove("inactive")
 
+  const [_, movieId] = location.hash.split("="); //['#movie', 'id de la pelicula'] definir variables como en ecmascript 6
   getMoviebyId(movieId);
 }
 
@@ -108,10 +114,11 @@ function searchPage(){
 
   headerSection.classList.remove('header-container--long')
   headerSection.style.background = '';
+  headerLogo.classList.add("inactive");
   arrowBtn.classList.remove('inactive');
   arrowBtn.classList.remove("header-arrow--white");
   headerTitle.classList.add('inactive');
-  headerCategoryTitle.classList.add('inactive');
+  headerCategoryTitle.classList.remove('inactive');
   searchForm.classList.remove('inactive')
 
   trendingPreviewSection.classList.add('inactive');
@@ -129,6 +136,7 @@ function trendsPage(){
 
   headerSection.classList.remove("header-container--long");
   headerSection.style.background = "";
+  headerLogo.classList.add("inactive");
   arrowBtn.classList.remove("inactive");
   arrowBtn.classList.remove("header-arrow--white");
   headerTitle.classList.add("inactive");
