@@ -118,7 +118,7 @@ function searchPage(){
   arrowBtn.classList.remove('inactive');
   arrowBtn.classList.remove("header-arrow--white");
   headerTitle.classList.add('inactive');
-  headerCategoryTitle.classList.remove('inactive');
+  headerCategoryTitle.classList.add('inactive');
   searchForm.classList.remove('inactive')
 
   trendingPreviewSection.classList.add('inactive');
@@ -127,6 +127,7 @@ function searchPage(){
   movieDetailSection.classList.add('inactive')
 
   const [_, query] = location.hash.split("="); //['#search', 'buscador'] definir variables como en ecmascript 6
+  // headerCategoryTitle.innerHTML = query;
   
   getMoviesBySearch(query)
 }

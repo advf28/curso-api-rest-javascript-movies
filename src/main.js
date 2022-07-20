@@ -14,7 +14,7 @@ const api = axios.create({
 function createMovies(movies, container){
   container.innerHTML = '';
 
-  movies.forEach((movie) => {
+  movies.forEach(movie => {
     const movieContainer = document.createElement("div");
     movieContainer.classList.add("movie-container");
     movieContainer.addEventListener('click',() => {
